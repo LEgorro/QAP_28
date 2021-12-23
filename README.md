@@ -11,18 +11,18 @@ pip install -r requirements.txt
 
 2) Скачать версию Selenium WebDriver, совместимую с вашим браузером (тесты проводились в браузере Microsoft Edge)
 
-В файле conftest.py в фикстуре driver изменить значение driver на ваш Selenium WebDriver и указать путь к файлу драйвера
+3) В файле conftest.py в фикстуре driver изменить значение driver на ваш Selenium WebDriver и указать путь к файлу драйвера
 
-3) Запускайте тесты командой:
+4) Запускайте тесты командой:
 
 запуск всех тестов: 
 
-py.test -v -l
+  py.test -v -l
 
 некоторые тесты помечены маркером "smoke" (тесты для smoke-тестирвоания) и "parametrize" (тесты с параметризацией):
 
-py.test -v -l -m "имя маркера" (пример: py.test -v -l -m "smoke")
+  py.test -v -l -m "имя маркера" (пример: py.test -v -l -m "smoke")
 
 Остальные тесты сгруппированны по страницам
 
-py.test имя_файла_с_тестами -v -l (пример: py.test test_main_page.py -v -l)
+  py.test имя_файла_с_тестами -v -l (пример: py.test test_main_page.py -v -l)
